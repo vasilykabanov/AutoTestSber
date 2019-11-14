@@ -1,3 +1,5 @@
+package FirstTest;
+
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -10,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
-public class Script {
+public class FirstTest {
 
     WebDriver driver;
     String URL;
@@ -43,7 +45,7 @@ public class Script {
 
         // Сделать скролл до footer объекта на главной странице
         WebElement webElement = driver.findElement(By.className("footer__social"));
-        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",webElement);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", webElement);
         Thread.sleep(3000);
 
         // доступен ли элемент на странице
